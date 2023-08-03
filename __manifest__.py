@@ -10,12 +10,10 @@
     'website': 'https://github.com/satriacening',
     'depends': ['base', 'base_setup', 'mail'],
     'data': [
-        'security/ir.model.access.csv',
         'data/mail_channel_data.xml',
         'data/user_partner_data.xml',
     ],
     'external_dependencies': {'python': ['gpt4all']},
-    'images': ['static/description/main_screenshot.png'],
     'installable': True,
     'application': False,
     'auto_install': False,

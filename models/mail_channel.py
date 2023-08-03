@@ -54,9 +54,12 @@ class Channel(models.Model):
             with model.chat_session():
                 response = model.generate(prompt=prompt, top_k=1, max_tokens=3000, top_p=1)
                 print("Answer : ", response)
-                print(model.current_chat_session)
-
-                return response
+                session = model.current_chat_session
+                answer = session[-1]["content"]
+                print("raw session : ", session)
+                print('answer :',answer)
+                print("debug : ", model.chat_session())
+                return answer
         except Exception as e:
             print("error message :", e)
             return e
