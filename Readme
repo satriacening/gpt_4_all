@@ -1,12 +1,15 @@
 GPT4All integration with odoo 16
 
-This is module addons for odoo 16s
+This is module addons for odoo 16, to interact with gpt you can open the discus module
 
 GPT4All is an alternative to chatGPT. GPT4All is free and does not require api_key. 
 Allows the application to leverage the capabilities of the GPT language model to generate human-like responses, providing a more natural and intuitive user experience'
 
+*if you using macos please usinng this env "https://github.com/conda-forge/miniforge"
+
 Important
-1. Download model https://gpt4all.io/index.html, in section Model Explorer and choose model
-2. Create folder ai_models and and move the files that have been downloaded into the folder ai_models
-3. Rename the `model_name` that is inside the method `_generate_response` according to the model that was downloaded earlier
-4. and install the module odoo
+1. Install gpt4all `pip install gpt4all`
+2. Download model https://gpt4all.io/index.html, in section Model Explorer and choose model
+3. Create folder ai_models and and move the files that have been downloaded into the folder ai_models
+4. Rename the `model_name` that is inside the method `_generate_response` according to the model that was downloaded earlier
+5. and install the module odoo
